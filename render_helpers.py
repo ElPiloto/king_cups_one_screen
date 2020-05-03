@@ -19,7 +19,9 @@ def render_custom_rule_as_collapsible(custom_rules):
     unique_val2 += 1
     if u in unique_users:
       unique_users[u] += 1
-      display_username = '{} {}'.format(u, unique_users[u])
+      # Switch to this if you want to identify each time a user has made a rule.
+      #display_username = '{} {}'.format(u, unique_users[u])
+      display_username = u
     else:
       display_username = u
       unique_users[u] = 1
@@ -34,5 +36,5 @@ def render_custom_rule_as_collapsible(custom_rules):
           {}
         </div>
       </div>
-    </div>'''.format(unique_val, display_username, unique_val, r)
+    </div>'''.format(unique_val, r, unique_val, display_username)
   return html
