@@ -1,0 +1,17 @@
+# Empty CSS file for your own CSS
+.ninety_percent_height {
+	height: 90%;
+}
+
+.ten_percent_height {
+	height: 10%;
+}
+
+.full_height {
+	height: 100%;
+}
+
+.bg-selected {
+  background-color: #86a4f0;
+}
+
